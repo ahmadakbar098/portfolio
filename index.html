@@ -79,34 +79,54 @@
 
   <main class="max-w-5xl mx-auto px-6">
     <!-- HERO SECTION -->
-    <section id="hero" class="pt-20 pb-16 md:pt-28 md:pb-24">
-      <div class="max-w-2xl">
-        <!-- Status Badge -->
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-medium mb-6">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          Siap untuk project baru & magang
+    <section id="hero" class="pt-16 pb-16 md:pt-24 md:pb-24">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-center">
+        
+        <!-- Kolom Teks (Kiri) -->
+        <div class="md:col-span-8 order-2 md:order-1">
+          <!-- Status Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Siap untuk project baru & magang
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">
+            Membangun aplikasi web yang fungsional, rapi, dan mudah digunakan.
+          </h1>
+
+          <!-- Subheading -->
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed mb-8">
+            Halo, saya <span class="font-semibold text-slate-900">Adhel Fahri Anggara</span>, mahasiswa Teknik Informatika yang mendalami full-stack web development. Berfokus pada arsitektur kode terstruktur dan UI minimalis.
+          </p>
+
+          <!-- CTA Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#projects" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-colors shadow-sm">
+              <span>Lihat Proyek Saya</span>
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-slate-300 bg-white text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-colors">
+              <span>Hubungi Saya</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Main Headline -->
-        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">
-          Membangun aplikasi web yang fungsional, rapi, dan mudah digunakan.
-        </h1>
-
-        <!-- Subheading -->
-        <p class="text-base md:text-lg text-slate-600 leading-relaxed mb-8">
-          Halo, saya <span class="font-semibold text-slate-900">Akbar</span>, mahasiswa Teknik Informatika yang mendalami full-stack web development. Berfokus pada arsitektur kode terstruktur dan UI minimalis.
-        </p>
-
-        <!-- CTA Action Buttons -->
-        <div class="flex flex-wrap items-center gap-4">
-          <a href="#projects" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-colors shadow-sm">
-            <span>Lihat Proyek Saya</span>
-            <i data-lucide="arrow-down" class="w-4 h-4"></i>
-          </a>
-          <a href="#contact" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-slate-300 bg-white text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-colors">
-            <span>Hubungi Saya</span>
-          </a>
+        <!-- Kolom Foto Profil (Kanan) -->
+        <div class="md:col-span-4 order-1 md:order-2 flex justify-center md:justify-end">
+          <div class="relative group">
+            <!-- Efek Aksen Ring di Belakang Gambar -->
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-blue-600 to-emerald-400 opacity-20 blur-sm group-hover:opacity-30 transition-opacity duration-300"></div>
+            
+            <!-- Elemen Foto Profil -->
+            <img 
+              src="assets/img/profile/profile.jpg" 
+              alt="Foto Profil Ahmad Akbar" 
+              class="relative w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-white shadow-md"
+            >
+          </div>
         </div>
+
       </div>
     </section>
 
